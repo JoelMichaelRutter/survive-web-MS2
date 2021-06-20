@@ -7,7 +7,7 @@ body{
     background-color: darkslategray;
 }
 #main-header {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
@@ -16,5 +16,46 @@ body{
     width: 90%;
     height: 80%;
     margin: 10px auto;
+    padding: 5px;
     background-color: floralwhite;
+    display: none;
+}
+
+#rules-container p {
+    text-align: center;
+}
+
+.rules-list li {
+    list-style-position: inside;
+    margin-left: 5px;
+}
+
+#start-game {
+    margin-top: 50px;
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    display: block;
+    margin: 30px auto 10px auto;
+}
+
+#game-container{
+    width: 90%;
+    height: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: floralwhite;
+    display: table;
+}
+
+#answer-btn-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.answer-btn {
+    width: 45%;
+    height: 60px;
+    margin-top: 20px;
 }

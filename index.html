@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survive.web</title>
-    <meta name="description" content="Welcome to Survive.web, the what would you do quiz game where you can test your zombie apocalypse decision making skills. Will you survive?">
+    <meta name="description"
+        content="Welcome to Survive.web, the what would you do quiz game where you can test your zombie apocalypse decision making skills. Will you survive?">
     <meta name="keywords" content="zombie, apocalypse, zombies, quiz, decision, survival">
     <meta name="author" content="Joel Michael Rutter">
     <link rel="stylesheet" href="assets/styles/styles.css" type="text/css">
 </head>
+
 <body>
     <header>
         <h1 id="main-header">Survive.web</h1>
     </header>
 
-    <div id="rules-container">Rules Container
+    <div id="rules-container">
+        <p>Welcome to survive.web, the decision making quiz where you can test your mettle during the inevitable zombie
+            apocalypse. Before you play, let's get you acquainted with the rules.</p>
+        <br>
         <ul class="rules-list">
-            <li>Rule1</li>
-            <li>Rule2</li>
-            <li>Rule3</li>
-            <li>Rule4</li>
+            <li>You will be presented with 10 zombie apocalypse scenarios and questions.</li>
+            <li>For each one, you will have four options to choose from.</li>
+            <li>The options have a score value ranging from 10 to 40. When you select an option, your total score will increase.</li>
+            <li>At the end of the game, your score will be assessed and depending on the score you acheive, we will decide how likely you are to survive.</li>
+            <li>If you reload the page for any reason, you will be returned to this screen and you will have to begin again.</li>
         </ul>
+        <button id="start-game">Play</button>
     </div>
-    <div id="game-container">Game Area
+    <button id="mute-music">Mute</button>
+    <div id="game-container">
+        <div id="score-block"><h2>Score:<span id="score-tally-container">0</span></h2></div>
         <div>Question Area
             <span id="situation-container"></span>
             <span id="question-container"></span>
         </div>
-        <div id="answer-button-container">
-            <button id="answer-one"><span class="answer-container">Lorem</span></button>
-            <button id="answer-two"><span class="answer-container">Ipsum</span></button>
-            <button id="answer-three"><span class="answer-container">Dolor</span></button>
-            <button id="answer-four"><span class="answer-container">Amor</span></button>
-        </div>
+    </div>
+    <div id="answer-btn-container">
+        <button class="answer-btn" id="answer-one"><span class="answer-container">Lorem</span></button>
+        <button class="answer-btn" id="answer-two"><span class="answer-container">Ipsum</span></button>
+        <button class="answer-btn" id="answer-three"><span class="answer-container">Dolor</span></button>
+        <button class="answer-btn" id="answer-four"><span class="answer-container">Amor</span></button>
     </div>
 </body>
+
 </html>
