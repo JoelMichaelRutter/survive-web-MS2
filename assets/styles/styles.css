@@ -18,7 +18,7 @@ body{
     margin: 10px auto;
     padding: 5px;
     background-color: floralwhite;
-    display: none;
+    display: table;
 }
 
 #rules-container p {
@@ -41,11 +41,11 @@ body{
 
 #game-container{
     width: 90%;
-    height: 80%;
+    height: 300px;
     margin: 10px auto;
     padding: 5px;
     background-color: floralwhite;
-    display: table;
+    display: none;
 }
 
 #answer-btn-container{

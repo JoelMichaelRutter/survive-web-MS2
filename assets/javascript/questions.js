@@ -65,4 +65,48 @@ let questions = [
         10: 'Ignore it and hope it was a dog',
     }
   },
+  {
+    numb: 7,
+    situation: "Your camp is attacked by bandits in the middle of the night, they are firing automatic weapons - attracting the undead.",
+    question: "What is your course of action?",
+    options: {
+        40: 'Get out and run',
+        30: 'Fight back',
+        20: 'Call a group meeting',
+        10: 'Challenge them to a dance off',
+    }
+  },
+  {
+    numb: 8,
+    situation: " You lose one of your group whilst looking for shelter for the night. You are losing light fast and your torch battery is dead.",
+    question: "What do you do?",
+    options: {
+        40: 'Take shelter for the night and go looking the following day',
+        30: 'Leave them, they shouldn’t have got lost',
+        20: 'Look for them',
+        10: 'Call their name whist looking for them',
+    }
+  },
+  {
+    numb: 9,
+    situation: "You are trapped with another member of your group, the undead are closing in on all sides.",
+    question: "What do you choose?",
+    options: {
+        40: 'Use the other member of the group as a human shield',
+        30: 'Fight your way out',
+        20: 'Hope for a miracle',
+        10: 'Lie down and accept your fate',
+    }
+  },
+  {
+    numb: 10,
+    situation: "You almost made it but you’ve been bitten by a zombie, your time is running out.",
+    question: "What do you do?",
+    options: {
+        40: 'Offer yourself as bait',
+        30: 'End yourself so there is one less zombie to deal with',
+        20: 'Tell the group and let them decide',
+        10: 'Turn and take the rest of the group with you',
+    }
+  },
 ]
