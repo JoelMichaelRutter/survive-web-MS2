@@ -1,4 +1,5 @@
-document.getElementById('start-game').addEventListener('click', startGame);
+let playButton = document.getElementById('start-game');
+playButton.addEventListener('click', startGame);
 
 /**
  * This function runs the intial sequence to start the game on click of the start-game button, from here the change question 
@@ -6,13 +7,20 @@ document.getElementById('start-game').addEventListener('click', startGame);
  * answer is selected
  */
 function startGame() {
-    document.getElementById('rules-container').style.display = 'none';
+    let rulesContainer = document.getElementById('rules-container');
+    rulesContainer.style.display = 'none';
+    let gameArea = document.getElementById('game-container');
+    gameArea.style.display = 'table';
+    let answerContainer = document.getElementById('answer-btn-container')
+    answerContainer.style.display = 'flex';
 }
 /**
  * This function changes the question when the customer selects an option after starting the game.
  */
 function changeQuestion() {
-
+    let number = document.getElementById('number-container');
+    let situation = document.getElementById('situation-container');
+    situation.textContent = questions.situation;
 }
 /**
  * This function will push integers to the score container based on the key-value pairs in the questions.js file.
