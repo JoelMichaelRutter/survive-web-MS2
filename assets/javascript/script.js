@@ -1,3 +1,5 @@
+import {questions} from './questions.js';
+
 let playButton = document.getElementById('start-game');
 playButton.addEventListener('click', startGame);
 
@@ -13,17 +15,29 @@ function startGame() {
     gameArea.style.display = 'table';
     let answerContainer = document.getElementById('answer-btn-container')
     answerContainer.style.display = 'flex';
+    changeQuestionAndOptions();
 }
 /**
- * This function changes the question when the customer selects an option after starting the game.
+ * This loop and function changes the question when the customer selects an option after starting the game.
  */
-function changeQuestion() {
+
+ const answers = document.querySelectorAll('.answer-btn'); 
+ answers.forEach(answer => answer.addEventListener('click', () => { changeQuestionAndOptions
+ };
+
+for (let i = 0; i < questions.length; i++){
+    document.getElementsByClassName('answer-btn').addEventListener('click', changeQuestionAndOptions);
+    console.log(questions[i]);
+}
+
+function changeQuestionAndOptions() {
     let number = document.getElementById('number-container');
-    let situation = document.getElementById('situation-container');
-    situation.textContent = questions.situation;
+    let situ = document.getElementById('situation-container')
+    let question = document.getElementById('question-container');
+    situation.textContent = questions.situation.value;
 }
 /**
- * This function will push integers to the score container based on the key-value pairs in the questions.js file.
+ * This function will push integers to the score container based on the key-value pairs in the options key inside the questions.js file.
  */
 function tallyScore(){
 
