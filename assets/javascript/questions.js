@@ -4,10 +4,10 @@ let questions = [
     situation: "BREAKING NEWS! There is an outbreak of a new deadly virus that kills the infected and reanimates the body. All major cities are in chaos and teeming with the undead. Law and order has gone out the window – looting and destruction is rife.",
     question: "How would you react!?",
     options: {
-        40: 'Listen to the news carefully and make a plan of action',
-        30: 'Join in the looting and embrace the chaos',
-        20: 'Panic and lock yourself in a cupboard – no one will find me here',
-        10: 'Get drunk as a skunk and hope for the best',
+        forty: 'Listen to the news carefully and make a plan of action',
+        thirty: 'Join in the looting and embrace the chaos',
+        twenty: 'Panic and lock yourself in a cupboard – no one will find me here',
+        ten: 'Get drunk as a skunk and hope for the best',
     }
   },
   {
@@ -15,10 +15,10 @@ let questions = [
     situation: "You know deep down that you need to leave, so you grab a bag and get ready to face your fears.",
     question: "What do you pack?",
     options: {
-        40: 'The essentials - water, food, first aid kit and a torch',
-        30: 'Your pet',
-        20: 'Nothing',
-        10: 'Your favourite clothes',
+        forty: 'The essentials - water, food, first aid kit and a torch',
+        thirty: 'Your pet',
+        twenty: 'Nothing',
+        ten: 'Your favourite clothes',
     }
   },
   {
@@ -26,10 +26,10 @@ let questions = [
     situation: "You narrowly escape. You came closer to the hoards of the undead than you were comfortable with but you’re safe - for now...",
     question: "Where are you heading?",
     options: {
-        40: 'The closest military base',
-        30: 'The Isle of Wight',
-        20: 'The countryside',
-        10: 'The coast',
+        forty: 'The closest military base',
+        thirty: 'The Isle of Wight',
+        twenty: 'The countryside',
+        ten: 'The coast',
     }
   },
   {
@@ -37,10 +37,10 @@ let questions = [
     situation: "You learn that the only way make the undead dead again is to destroy the brain.",
     question: "What would be your weapon of choice?",
     options: {
-        40: 'Cricket bat',
-        30: 'Hunting rifle',
-        20: 'Umbrella',
-        10: 'Garden strimmer',
+        forty: 'Cricket bat',
+        thirty: 'Hunting rifle',
+        twenty: 'Umbrella',
+        ten: 'Garden strimmer',
     }
   },
   {
@@ -48,10 +48,10 @@ let questions = [
     situation: "You have run out of food.",
     question: "What is your preferred plan of action?",
     options: {
-        40: 'Scavenge for food',
-        30: 'Lay traps',
-        20: 'Cut of your arm and eat it',
-        10: 'Eat a zombie',
+        forty: 'Scavenge for food',
+        thirty: 'Lay traps',
+        twenty: 'Cut of your arm and eat it',
+        ten: 'Eat a zombie',
     }
   },
   {
@@ -59,10 +59,10 @@ let questions = [
     situation: "One of your group has a bite on their arm, no one else knows other than you.",
     question: "What do you do?",
     options: {
-        40: 'End them...',
-        30: 'Banish them from your group',
-        20: 'Call a group meeting',
-        10: 'Ignore it and hope it was a dog',
+        forty: 'End them...',
+        thirty: 'Banish them from your group',
+        twenty: 'Call a group meeting',
+        ten: 'Ignore it and hope it was a dog',
     }
   },
   {
@@ -70,10 +70,10 @@ let questions = [
     situation: "Your camp is attacked by bandits in the middle of the night, they are firing automatic weapons - attracting the undead.",
     question: "What is your course of action?",
     options: {
-        40: 'Get out and run',
-        30: 'Fight back',
-        20: 'Call a group meeting',
-        10: 'Challenge them to a dance off',
+        forty: 'Get out and run',
+        thirty: 'Fight back',
+        twenty: 'Call a group meeting',
+        ten: 'Challenge them to a dance off',
     }
   },
   {
@@ -81,10 +81,10 @@ let questions = [
     situation: " You lose one of your group whilst looking for shelter for the night. You are losing light fast and your torch battery is dead.",
     question: "What do you do?",
     options: {
-        40: 'Take shelter for the night and go looking the following day',
-        30: 'Leave them, they shouldn’t have got lost',
-        20: 'Look for them',
-        10: 'Call their name whist looking for them',
+        forty: 'Take shelter for the night and go looking the following day',
+        thirty: 'Leave them, they shouldn’t have got lost',
+        twenty: 'Look for them',
+        ten: 'Call their name whist looking for them',
     }
   },
   {
@@ -92,10 +92,10 @@ let questions = [
     situation: "You are trapped with another member of your group, the undead are closing in on all sides.",
     question: "What do you choose?",
     options: {
-        40: 'Use the other member of the group as a human shield',
-        30: 'Fight your way out',
-        20: 'Hope for a miracle',
-        10: 'Lie down and accept your fate',
+        forty: 'Use the other member of the group as a human shield',
+        thirty: 'Fight your way out',
+        twenty: 'Hope for a miracle',
+        ten: 'Lie down and accept your fate',
     }
   },
   {
@@ -103,10 +103,10 @@ let questions = [
     situation: "You almost made it but you’ve been bitten by a zombie, your time is running out.",
     question: "What do you do?",
     options: {
-        40: 'Offer yourself as bait',
-        30: 'End yourself so there is one less zombie to deal with',
-        20: 'Tell the group and let them decide',
-        10: 'Turn and take the rest of the group with you',
+        forty: 'Offer yourself as bait',
+        thirty: 'End yourself so there is one less zombie to deal with',
+        twenty: 'Tell the group and let them decide',
+        ten: 'Turn and take the rest of the group with you',
     }
   },
 ]
