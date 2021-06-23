@@ -1,9 +1,10 @@
-import {questions} from './questions.js';
+import {
+    questions
+} from './questions.js';
 
 let questionNumber = questions.length;
 let currentQuestion = 0;
 let scoreTally = parseInt(document.getElementById('score-tally-container').textContent);
-
 let playButton = document.getElementById('start-game');
 playButton.addEventListener('click', startGame);
 
@@ -21,7 +22,7 @@ function startGame() {
     answerContainer.style.display = 'flex';
     changeQuestionAndOptions();
 }
- /**
+/**
  * The function and event listeners  change the question when the user 
  * selects an option after starting the game.
  */
@@ -51,26 +52,23 @@ answerButton[3].addEventListener('click', changeQuestionAndOptions);
  * This function will push integers to the score container based on the key-value pairs in the options key inside the questions.js file.
  */
 
-let fortyOption = answerButton[0];
-let thirtyOption = answerButton[1];
-let twentyOption = answerButton[2];
-let tenOption = answerButton[3];
-answerButton[0].addEventListener('click', tallyScore(fortyOption));
-answerButton[1].addEventListener('click', tallyScore(thirtyOption));
-answerButton[2].addEventListener('click', tallyScore(twentyOption));
-answerButton[2].addEventListener('click', tallyScore(tenOption));
+let userOptionScore = [40, 30, 20, 10];
+answerButton[0].addEventListener('click', tallyScore(scoreTally, userOptionScore[0]));
+answerButton[1].addEventListener('click', tallyScore(scoreTally, userOptionScore[1]));
+answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[2]));
+answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[3]));
 
-function tallyScore(userOption){
-    if (userOption == fortyOption){
+function tallyScore() {
+    if (userOptionScore === 40) {
         scoreTally == scoreTally + 40;
-    } else if (userOption == thirtyOption){
+    } else if (userOptionScore === 30) {
         scoreTally == scoreTally + 30;
-    } else if (userOption == twentyOption){
+    } else if (userOptionScore === 20) {
         scoreTally == scoreTally + 20;
-    } else {
+    } else if (userOptionScore === 10){
         scoreTally == scoreTally + 10;
     }
-    
+    return scoreTally;
 }
 
 
@@ -79,6 +77,6 @@ function tallyScore(userOption){
  * aswell as some written feedback based on the score bracket they achieve. The divs this function displays 
  * will also have a a button contained within to prompt the user to play again.
  */
-function assessScore(){
+function assessScore() {
 
 }
