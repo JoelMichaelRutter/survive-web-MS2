@@ -50,7 +50,7 @@ let questions = [
     options: {
         forty: 'Scavenge for food',
         thirty: 'Lay traps',
-        twenty: 'Cut of your arm and eat it',
+        twenty: 'Cut off your arm and eat it',
         ten: 'Eat a zombie',
     }
   },

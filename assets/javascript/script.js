@@ -2,6 +2,7 @@ import {questions} from './questions.js';
 
 let questionNumber = questions.length;
 let currentQuestion = 0;
+let scoreTally = parseInt(document.getElementById('score-tally-container').textContent);
 
 let playButton = document.getElementById('start-game');
 playButton.addEventListener('click', startGame);
@@ -20,13 +21,10 @@ function startGame() {
     answerContainer.style.display = 'flex';
     changeQuestionAndOptions();
 }
-/**
- * This loop and function changes the question when the customer selects an option after starting the game.
+ /**
+ * The function and event listeners  change the question when the user 
+ * selects an option after starting the game.
  */
-
-//  const answers = document.querySelectorAll('.answer-btn'); 
-//  answers.forEach(answer => answer.addEventListener('click', () => { changeQuestionAndOptions
-//  };
 
 function changeQuestionAndOptions() {
     let question = questions[currentQuestion];
@@ -43,6 +41,7 @@ function changeQuestionAndOptions() {
     option[3].innerText = questions[currentQuestion].options.ten;
     currentQuestion++;
 }
+
 let answerButton = document.getElementsByClassName('answer-btn')
 answerButton[0].addEventListener('click', changeQuestionAndOptions);
 answerButton[1].addEventListener('click', changeQuestionAndOptions);
@@ -51,9 +50,30 @@ answerButton[3].addEventListener('click', changeQuestionAndOptions);
 /**
  * This function will push integers to the score container based on the key-value pairs in the options key inside the questions.js file.
  */
-function tallyScore(){
 
+let fortyOption = answerButton[0];
+let thirtyOption = answerButton[1];
+let twentyOption = answerButton[2];
+let tenOption = answerButton[3];
+answerButton[0].addEventListener('click', tallyScore(fortyOption));
+answerButton[1].addEventListener('click', tallyScore(thirtyOption));
+answerButton[2].addEventListener('click', tallyScore(twentyOption));
+answerButton[2].addEventListener('click', tallyScore(tenOption));
+
+function tallyScore(userOption){
+    if (userOption == fortyOption){
+        scoreTally == scoreTally + 40;
+    } else if (userOption == thirtyOption){
+        scoreTally == scoreTally + 30;
+    } else if (userOption == twentyOption){
+        scoreTally == scoreTally + 20;
+    } else {
+        scoreTally == scoreTally + 10;
+    }
+    
 }
+
+
 /**
  * This function assesses the user's score when they complete the final scenario and will display the results 
  * aswell as some written feedback based on the score bracket they achieve. The divs this function displays 
