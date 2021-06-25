@@ -43,32 +43,46 @@ function changeQuestionAndOptions() {
     currentQuestion++;
 }
 
-let answerButton = document.getElementsByClassName('answer-btn')
-answerButton[0].addEventListener('click', changeQuestionAndOptions);
-answerButton[1].addEventListener('click', changeQuestionAndOptions);
-answerButton[2].addEventListener('click', changeQuestionAndOptions);
-answerButton[3].addEventListener('click', changeQuestionAndOptions);
+let answerButton = Array.from(document.getElementsByClassName('answer-btn'));
+console.log(answerButton);
+// answerButton.forEach(element => {
+//     addEventListener('click', () => {
+//         changeQuestionAndOptions();
+//         tallyScore();
+//     });
+// });
+
+answerButton.forEach(button => button.addEventListener('click', () => {
+    changeQuestionAndOptions();
+    tallyScore(button);
+}));
+
+// answerButton[0].addEventListener('click', changeQuestionAndOptions);
+// answerButton[1].addEventListener('click', changeQuestionAndOptions);
+// answerButton[2].addEventListener('click', changeQuestionAndOptions);
+// answerButton[3].addEventListener('click', changeQuestionAndOptions);
 /**
  * This function will push integers to the score container based on the key-value pairs in the options key inside the questions.js file.
  */
 
-let userOptionScore = [40, 30, 20, 10];
-answerButton[0].addEventListener('click', tallyScore(scoreTally, userOptionScore[0]));
-answerButton[1].addEventListener('click', tallyScore(scoreTally, userOptionScore[1]));
-answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[2]));
-answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[3]));
+// answerButton[0].addEventListener('click', tallyScore(scoreTally, userOptionScore[0]));
+// answerButton[1].addEventListener('click', tallyScore(scoreTally, userOptionScore[1]));
+// answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[2]));
+// answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[3]));
 
-function tallyScore() {
-    if (userOptionScore === 40) {
-        scoreTally == scoreTally + 40;
-    } else if (userOptionScore === 30) {
-        scoreTally == scoreTally + 30;
-    } else if (userOptionScore === 20) {
-        scoreTally == scoreTally + 20;
-    } else if (userOptionScore === 10){
-        scoreTally == scoreTally + 10;
+function tallyScore(button) {
+    if (button.id === 'answer-one') {
+        scoreTally = scoreTally + 40;
+        console.log(scoreTally);
+    } else if (button.id === 'answer-two') {
+        scoreTally = scoreTally + 30;
+    } else if (button.id === 'answer-three') {
+        scoreTally = scoreTally + 20;
+    } else if (button.id === 'answer-four'){
+        scoreTally = scoreTally + 10;
     }
-    return scoreTally;
+    document.getElementById('score-tally-container').textContent = scoreTally;
+    
 }
 
 
