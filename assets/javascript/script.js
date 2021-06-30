@@ -6,6 +6,8 @@ let questionNumber = questions.length;
 let currentQuestion = 0;
 let scoreTally = parseInt(document.getElementById('score-tally-container').textContent);
 let playButton = document.getElementById('start-game');
+let gameArea = document.getElementById('game-container');
+let answerContainer = document.getElementById('answer-btn-container');
 playButton.addEventListener('click', startGame);
 
 /**
@@ -41,35 +43,22 @@ function changeQuestionAndOptions() {
     option[2].innerText = questions[currentQuestion].options.twenty;
     option[3].innerText = questions[currentQuestion].options.ten;
     currentQuestion++;
+    console.log(currentQuestion);
+    if (currentQuestion === 11){
+        assessScore();
+}
 }
 
 let answerButton = Array.from(document.getElementsByClassName('answer-btn'));
 console.log(answerButton);
-// answerButton.forEach(element => {
-//     addEventListener('click', () => {
-//         changeQuestionAndOptions();
-//         tallyScore();
-//     });
-// });
-
 answerButton.forEach(button => button.addEventListener('click', () => {
     changeQuestionAndOptions();
     tallyScore(button);
 }));
 
-// answerButton[0].addEventListener('click', changeQuestionAndOptions);
-// answerButton[1].addEventListener('click', changeQuestionAndOptions);
-// answerButton[2].addEventListener('click', changeQuestionAndOptions);
-// answerButton[3].addEventListener('click', changeQuestionAndOptions);
 /**
- * This function will push integers to the score container based on the key-value pairs in the options key inside the questions.js file.
+ * This function will push integers to the score container based on the answer the user picks.
  */
-
-// answerButton[0].addEventListener('click', tallyScore(scoreTally, userOptionScore[0]));
-// answerButton[1].addEventListener('click', tallyScore(scoreTally, userOptionScore[1]));
-// answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[2]));
-// answerButton[2].addEventListener('click', tallyScore(scoreTally, userOptionScore[3]));
-
 function tallyScore(button) {
     if (button.id === 'answer-one') {
         scoreTally = scoreTally + 40;
@@ -82,8 +71,13 @@ function tallyScore(button) {
         scoreTally = scoreTally + 10;
     }
     document.getElementById('score-tally-container').textContent = scoreTally;
-    
 }
+
+/**
+ * This if statement checks the question number and if the question number is true, it will run the assess score function.
+ * Should more questions be added with later releases the number in this if statement would need to change to the blank question
+ * after the final question so that when the user clicks their final answer, the assessScore function will be called.
+ */
 
 
 /**
@@ -92,5 +86,9 @@ function tallyScore(button) {
  * will also have a a button contained within to prompt the user to play again.
  */
 function assessScore() {
-
+    if(scoreTally > 300){
+        gameArea.style.display = "none";
+        answerContainer.style.display = "none";
+        document.getElementById('best-score').style.display = "block";
+    } 
 }

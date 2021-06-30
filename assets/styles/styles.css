@@ -59,3 +59,16 @@ body{
     height: 60px;
     margin-top: 20px;
 }
+
+
+.score-div {
+    background: floralwhite;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+#best-score {
+    display: none;
+}
+
