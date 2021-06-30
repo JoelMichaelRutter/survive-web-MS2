@@ -106,3 +106,12 @@ function assessScore() {
         document.getElementById('worst-score').style.display = "block";
     }
 }
+
+let playAgainBtns = Array.from(document.getElementsByClassName('play-again-btn'));
+playAgainBtns.forEach(button => button.addEventListener('click', () => {
+    restartGame();
+}));
+
+function restartGame(){
+    document.location.href = "";
+}
