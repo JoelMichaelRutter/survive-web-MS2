@@ -95,4 +95,14 @@ function assessScore() {
         answerContainer.style.display = "none";
         document.getElementById('good-score').style.display = "block";
     }
+    else if (scoreTally > 100){
+        gameArea.style.display = "none";
+        answerContainer.style.display = "none";
+        document.getElementById('bad-score').style.display = "block";
+    }
+    else if (scoreTally = 100){
+        gameArea.style.display = "none";
+        answerContainer.style.display = "none";
+        document.getElementById('worst-score').style.display = "block";
+    }
 }
