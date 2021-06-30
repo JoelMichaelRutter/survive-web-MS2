@@ -90,5 +90,9 @@ function assessScore() {
         gameArea.style.display = "none";
         answerContainer.style.display = "none";
         document.getElementById('best-score').style.display = "block";
-    } 
+    } else if (scoreTally > 200){
+        gameArea.style.display = "none";
+        answerContainer.style.display = "none";
+        document.getElementById('good-score').style.display = "block";
+    }
 }

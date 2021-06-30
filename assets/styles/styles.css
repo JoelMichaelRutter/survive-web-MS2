@@ -72,3 +72,15 @@ body{
     display: none;
 }
 
+#good-score {
+    display: none;
+}
+
+#bad-score {
+    display: none;
+}
+
+#worst-score {
+    display: none;
+}
+
