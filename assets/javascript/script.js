@@ -2,6 +2,10 @@ import {
     questions
 } from './questions.js';
 
+window.onload = function() {
+    audio.play();
+}
+
 let questionNumber = questions.length;
 let currentQuestion = 0;
 let scoreTally = parseInt(document.getElementById('score-tally-container').textContent);
@@ -10,6 +14,12 @@ let gameArea = document.getElementById('game-container');
 let answerContainer = document.getElementById('answer-btn-container');
 playButton.addEventListener('click', startGame);
 
+var audio = new Audio();
+audio.src = "assets/audio/survive-web-bg-music-compressed.mp3";
+audio.loop = true;
+
+document.getElementById('play-music-btn').addEventListener('click', function() { audio.play(); });
+document.getElementById('mute-music-btn').addEventListener('click', function() { audio.pause(); });
 /**
  * This function runs the intial sequence to start the game on click of the start-game button, from here the change question 
  * function will take over to populate the HTML from the questions.js file each time an 
