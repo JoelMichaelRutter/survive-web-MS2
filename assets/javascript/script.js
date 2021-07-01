@@ -10,19 +10,6 @@ let gameArea = document.getElementById('game-container');
 let answerContainer = document.getElementById('answer-btn-container');
 playButton.addEventListener('click', startGame);
 
-let backgroundMusic = document.getElementsByTagName('audio');
-let playMusicButton = document.getElementById('play-music');
-playMusicButton.addEventListener('click', playMusic());
-let muteButton = document.getElementById('mute-music');
-muteButton.addEventListener('click', pauseMusic())
-
-function playMusic(){
-    backgroundMusic.play();
-}
-
-function pauseMusic(){
-    backgroundMusic.pause();
-}
 /**
  * This function runs the intial sequence to start the game on click of the start-game button, from here the change question 
  * function will take over to populate the HTML from the questions.js file each time an 
@@ -36,7 +23,6 @@ function startGame() {
     let answerContainer = document.getElementById('answer-btn-container')
     answerContainer.style.display = 'flex';
     changeQuestionAndOptions();
-    playMusic();
 }
 /**
  * The function and event listeners  change the question when the user 

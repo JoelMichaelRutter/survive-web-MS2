@@ -17,9 +17,7 @@
     <header>
         <h1 id="main-header">Survive.web</h1>
     </header>
-    <button id="mute-music">Mute Music</button>
-    <button id="play-music">Play Music</button>
-    <audio src="assets/audio/survive-web-bg-music-compressed.mp3"></audio>
+    <audio src="assets/audio/survive-web-bg-music-compressed.mp3" controls autoplay loop id="bg-music"></audio>
     <div id="rules-container">
         <p>Welcome to Survive.web, the decision making quiz where you can test your mettle during the inevitable zombie
             apocalypse. Before you play, let's get you acquainted with the rules and game instructions:</p>
@@ -32,8 +30,7 @@
             <li>Everytime you select an option, the next scenario will be displayed.</li>
             <li>At the end of the game, your score will be assessed and depending on the score you acheive, we will
                 decide how likely you are to survive.</li>
-            <li>There is background music that will play throughout the course of the game, you can mute this by using
-                the mute button.</li>
+            <li>There is background music that will play throughout the course of the game, you can mute, pause or lower the volume of the music by using the player at the top of the page.</li>
             <li>If you reload the page for any reason, you will be returned to this screen and you will have to begin
                 again.</li>
         </ul>
@@ -95,6 +92,7 @@
     
     <script type="module" src="assets/javascript/questions.js"></script>
     <script type="module" src="assets/javascript/script.js"></script>
+    <footer></footer>
 </body>
 
 </html>
