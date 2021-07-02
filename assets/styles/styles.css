@@ -65,6 +65,7 @@ p, li {
     font-size: 1rem;
     color:  #D1D1D1;
 }
+
 #rules-container {
     width: 90%;
     height: auto;
@@ -75,8 +76,6 @@ p, li {
     border-radius: 8px;
 }
 
-
-
 #rules-container p {
     text-align: center;
 }
@@ -84,36 +83,52 @@ p, li {
 .rules-list li {
     list-style-position: inside;
     margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 #start-game {
-    margin-top: 50px;
-    width: 40%;
-    height: 30px;
-    text-align: center;
+    width: 140px;
+    height: auto;
     display: block;
     margin: 30px auto 10px auto;
+    font-family: 'DotGothic16', sans-serif;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #D1D1D1;
 }
 
-#game-container{
+#game-container {
     width: 90%;
     height: 300px;
     margin: 10px auto;
     padding: 5px;
-    background-color: floralwhite;
+    background-color: rgba(98, 98, 98, 0.8);
     display: none;
+    text-align: center;
+    border-radius: 8px;
 }
 
 #answer-btn-container{
     display: none;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 .answer-btn {
     width: 45%;
     height: 60px;
     margin-top: 20px;
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #D1D1D1;
+}
+
+.answer-btn span {
+    font-family: ;
 }
 
 
