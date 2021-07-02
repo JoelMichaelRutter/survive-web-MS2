@@ -10,18 +10,6 @@ Paragraph Font = font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 
-#page-container {
-    height: 100vh;
-    background-image: url('../images/bg-image-compressed.jpg');
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-}
-
 h1, h2, h3 {
     font-family: 'Creepster', cursive;
 }
@@ -29,6 +17,18 @@ h1, h2, h3 {
 p, li {
     font-family: 'Source Sans Pro', sans-serif;
     color: #D1D1D1;
+}
+
+/*----------- MOBILE FIRST STYLINGS -----------------*/
+#page-container {
+    background-image: url('../images/bg-image-compressed.jpg');
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
 }
 
 #main-header {
