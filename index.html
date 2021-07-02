@@ -51,9 +51,9 @@
                 <h2>Score:<span id="score-tally-container">0</span></h2>
             </div>
             <div>
-                <span id="number-container">This is where the number will go</span>
-                <span id="situation-container">This is where the situation will go</span>
-                <span id="question-container">This is where the question will go</span>
+                <span class="game-content" id="number-container">This is where the number will go</span>
+                <span class="game-content" id="situation-container">This is where the situation will go</span>
+                <span class="game-content" id="question-container">This is where the question will go</span>
             </div>
         </div>
         <div id="answer-btn-container">
@@ -65,7 +65,10 @@
         <div class="score-div" id="best-score">
             <h2>You're a real Rick Grimes wannabe arent you!</h2>
             <p>You scored between 300 & 400 points!</p>
-            <img src="#" alt="An image of Rick Grimes face" class="score-div-image">
+            <div class="score-img-flex-container">
+                <img src="assets/images/best-score-image.png" alt="An image of Rick Grimes face"
+                    class="score-div-image">
+            </div>
             <p>Based on your answers, you are a survivor. You are stone cold, ruthless and cautious. We know who we are
                 tagging along with during the apocalypse.</p>
             <p>Whilst we now know that you're a survivor, if you think you can do better, why don't you play again?</p>
@@ -74,7 +77,9 @@
         <div class="score-div" id="good-score">
             <h2>You've got red on you.</h2>
             <p>You scored between 200 & 300 points!</p>
-            <img src="#" alt="An image of Shaun from Shaun of the Dead" class="score-div-image">
+            <div class="score-img-flex-container">
+                <img src="assets/images/good-score-image.png" alt="An image of Shaun from Shaun of the Dead" class="score-div-image">
+            </div>
             <p>Based on your answers, we think that you are more than likely to survive. Your decision making could
                 improve though.</p>
             <p>Whilst we think you can probably survive, you might want to have another go to see if you can beat your
@@ -84,27 +89,31 @@
         <div class="score-div" id="bad-score">
             <h2>Oh dear, oh dear, oh dear</h2>
             <p>You scored between 100 & 200 points.</p>
-            <img src="#" alt="An image of " class="score-div-image">
-            <p>We hate to break it to you but you don't really seem cut out for the end of the world. Your decision
-                making is really lacking. You might want to brush up on that and read some zombie apocalypse survival
-                guides.</p>
-            <p>Once you have brushed up on your zombie survival knowledge, why don't you have another go?</p>
-            <button class="play-again-btn">Play Again</button>
+            <div class="score-img-flex-container"></div>
+            <img src="assets/images/bad-score-image.png" alt="An image of David, a disliked character from Shaun of the Dead" class="score-div-image">
         </div>
-        <div class="score-div" id="worst-score">
-            <h2>Braiiinnnssss</h2>
-            <p>You scored 100 points.</p>
-            <img src="#" alt="An image of " class="score-div-image">
-            <p>Let's be honest now, you might aswell just lie down and accept your fate. Based on your answers, we're
-                sure that you are as good as zombified when the time comes</p>
-            <p>Fear not, it isn't the end of the world just yet. Go an brush up on your zombie survival skills and come
-                and have another go.</p>
-            <button class="play-again-btn">Play Again</button>
+        <p>We hate to break it to you but you don't really seem cut out for the end of the world. Your decision
+            making is really lacking. You might want to brush up on that and read some zombie apocalypse survival
+            guides.</p>
+        <p>Once you have brushed up on your zombie survival knowledge, why don't you have another go?</p>
+        <button class="play-again-btn">Play Again</button>
+    </div>
+    <div class="score-div" id="worst-score">
+        <h2>Braiiinnnssss</h2>
+        <p>You scored 100 points.</p>
+        <div class="score-img-flex-container">
+            <img src="assets/images/bad-score-image.png" alt="A close up image of a zombies face" class="score-div-image">
         </div>
+        <p>Let's be honest now, you might aswell just lie down and accept your fate. Based on your answers, we're
+            sure that you are as good as zombified when the time comes</p>
+        <p>Fear not, it isn't the end of the world just yet. Go an brush up on your zombie survival skills and come
+            and have another go.</p>
+        <button class="play-again-btn">Play Again</button>
+    </div>
 
-        <script type="module" src="assets/javascript/questions.js"></script>
-        <script type="module" src="assets/javascript/script.js"></script>
-        <footer></footer>
+    <script type="module" src="assets/javascript/questions.js"></script>
+    <script type="module" src="assets/javascript/script.js"></script>
+    <footer></footer>
     </div>
 </body>
 

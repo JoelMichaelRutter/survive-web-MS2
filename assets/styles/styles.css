@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro&display=swap');
-/*
-FONT FAMILY NAMES
-Heading Font = font-family: 'Creepster', cursive;
-Paragraph Font = font-family: 'Source Sans Pro', sans-serif;
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto&display=swap');
 /*
 FONT FAMILY NAMES
@@ -28,6 +21,8 @@ p, li {
 }
 
 /*----------- MOBILE FIRST STYLINGS -----------------*/
+
+/*This container serves as the background image for the page in mobile view*/
 #page-container {
     background-image: url('../images/bg-image-compressed.jpg');
     background-repeat: no-repeat;
@@ -39,6 +34,7 @@ p, li {
     background-size: cover;
 }
 
+/* The styles directly below are for the main header*/
 #main-header {
     font-size: 3rem;
     font-weight: bold;
@@ -47,11 +43,14 @@ p, li {
     letter-spacing: 5px;
     color: #D1D1D1;
 }
+
+/*The styles below are for the music button container, the music buttons themselves and the icons contained within them*/
 #music-btn-container {
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
 }
+
 #play-music-btn, #mute-music-btn {
     width: 50px;
     height: 50px;
@@ -109,6 +108,33 @@ p, li {
     border-radius: 8px;
 }
 
+#score-block h2 {
+    color: #D1D1D1;
+}
+
+.game-content {
+    font-family: 'Roboto', sans-serif;
+    color: #D1D1D1;
+    display: block;
+}
+
+#number-container {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#situation-container {
+    margin-top: 20px;
+}
+
+#question-container {
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 120%;
+}
+
 #answer-btn-container{
     display: none;
     justify-content: space-around;
@@ -127,16 +153,31 @@ p, li {
     color: #D1D1D1;
 }
 
-.answer-btn span {
-    font-family: ;
+.score-div {
+    background: rgba(98, 98, 98, 0.8);
+    width: 90%;
+    margin: 5% auto;
+    display: none;
 }
 
+.score-div h2 {
+    text-align: center;
+    color: #D1D1D1;
+}
 
-.score-div {
-    background: floralwhite;
-    width: 80%;
-    margin: 0 auto;
-    display: none;
+.score-div p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.score-img-flex-container {
+    display: flex;
+    align-items: center;
+}
+.score-div img {
+    width: 100px;
+    height: 100px;
+    margin: 5% auto 0 auto;
 }
 
 #best-score {
