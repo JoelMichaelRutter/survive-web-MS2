@@ -4,6 +4,14 @@ FONT FAMILY NAMES
 Heading Font = font-family: 'Creepster', cursive;
 Paragraph Font = font-family: 'Source Sans Pro', sans-serif;
 */
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto&display=swap');
+/*
+FONT FAMILY NAMES
+Heading Font = font-family: 'DotGothic16', sans-serif;
+Paragraph Font = font-family: 'Roboto', sans-serif;
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +19,11 @@ Paragraph Font = font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Creepster', cursive;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 p, li {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #D1D1D1;
 }
 
@@ -28,14 +36,14 @@ p, li {
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #main-header {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    font-family: 'Creepster', cursive;
+    font-family: 'DotGothic16', sans-serif;
     letter-spacing: 5px;
     color: #D1D1D1;
 }
@@ -45,8 +53,8 @@ p, li {
     margin-top: 5%;
 }
 #play-music-btn, #mute-music-btn {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color:rgba(98, 98, 98, 0.8);
     border: solid #D1D1D1 2px;
@@ -54,7 +62,7 @@ p, li {
 }
 
 #play-music-btn, #mute-music-btn i {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:  #D1D1D1;
 }
 #rules-container {
