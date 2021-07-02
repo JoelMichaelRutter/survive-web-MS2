@@ -24,7 +24,7 @@ p, li {
 
 /*This container serves as the background image for the page in mobile view*/
 #page-container {
-    background-image: url('../images/bg-image-compressed.jpg');
+    background-image: url('../images/survive-bg-image.jpg');
     background-repeat: no-repeat;
     overflow-y: hidden;
     overflow-x: hidden;
