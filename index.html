@@ -11,93 +11,108 @@
     <meta name="keywords" content="zombie, apocalypse, zombies, quiz, decision, survival">
     <meta name="author" content="Joel Michael Rutter">
     <link rel="stylesheet" href="assets/styles/styles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/96b5b0d61e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="page-container">
-    <header>
-        <h1 id="main-header">Survive.web</h1>
-    </header>
+        <header>
+            <h1 id="main-header"><i class="fas fa-biohazard"></i>Survive.web<i class="fas fa-biohazard"></i></h1>
+        </header>
+        <div id="music-btn-container">
+            <button id="play-music-btn"><i class="fas fa-play"></i><i class="fas fa-music"></i></button>
+            <button id="mute-music-btn"><i class="fas fa-volume-mute"></i><i class="fas fa-music"></i></button>
+        </div>
+        <!-- <audio src="assets/audio/survive-web-bg-music-compressed.mp3" controls autoplay loop id="bg-music"></audio> -->
+        <div id="rules-container">
+            <p>Welcome to Survive.web, the decision making quiz where you can test your mettle during the inevitable
+                zombie
+                apocalypse. Before you play, let's get you acquainted with the rules and game instructions:</p>
+            <br>
+            <ul class="rules-list">
+                <li>You will be presented with 10 zombie apocalypse scenarios and questions.</li>
+                <li>For each scenario and question, you will have four options to choose from.</li>
+                <li>The options have a score value ranging from 10 to 40. When you select an option, your total score
+                    will
+                    increase.</li>
+                <li>Everytime you select an option, the next scenario will be displayed.</li>
+                <li>At the end of the game, your score will be assessed and depending on the score you acheive, we will
+                    decide how likely you are to survive.</li>
+                <li>There is background music that will play throughout the course of the game, you can mute, pause or
+                    lower the volume of the music by using the player at the top of the page.</li>
+                <li>If you reload the page for any reason, you will be returned to this screen and you will have to
+                    begin
+                    again.</li>
+            </ul>
+            <button id="start-game">Play</button>
+        </div>
+        <div id="game-container">
+            <div id="score-block">
+                <h2>Score:<span id="score-tally-container">0</span></h2>
+            </div>
+            <div>
+                <span id="number-container">This is where the number will go</span>
+                <span id="situation-container">This is where the situation will go</span>
+                <span id="question-container">This is where the question will go</span>
+            </div>
+        </div>
+        <div id="answer-btn-container">
+            <button class="answer-btn" id="answer-one"><span class="answer-container">This is where one of the options
+                    will
+                    go</span></button>
+            <button class="answer-btn" id="answer-two"><span class="answer-container">This is where one of the options
+                    will
+                    go</span></button>
+            <button class="answer-btn" id="answer-three"><span class="answer-container">This is where one of the options
+                    will go</span></button>
+            <button class="answer-btn" id="answer-four"><span class="answer-container">This is where one of the options
+                    will
+                    go</span></button>
+        </div>
+        <div class="score-div" id="best-score">
+            <h2>You're a real Rick Grimes wannabe arent you!</h2>
+            <p>You scored between 300 & 400 points!</p>
+            <img src="#" alt="An image of Rick Grimes face" class="score-div-image">
+            <p>Based on your answers, you are a survivor. You are stone cold, ruthless and cautious. We know who we are
+                tagging along with during the apocalypse.</p>
+            <p>Whilst we now know that you're a survivor, if you think you can do better, why don't you play again?</p>
+            <button class="play-again-btn">Play Again</button>
+        </div>
+        <div class="score-div" id="good-score">
+            <h2>You've got red on you.</h2>
+            <p>You scored between 200 & 300 points!</p>
+            <img src="#" alt="An image of Shaun from Shaun of the Dead" class="score-div-image">
+            <p>Based on your answers, we think that you are more than likely to survive. Your decision making could
+                improve though.</p>
+            <p>Whilst we think you can probably survive, you might want to have another go to see if you can beat your
+                last score.</p>
+            <button class="play-again-btn">Play Again</button>
+        </div>
+        <div class="score-div" id="bad-score">
+            <h2>Oh dear, oh dear, oh dear</h2>
+            <p>You scored between 100 & 200 points.</p>
+            <img src="#" alt="An image of " class="score-div-image">
+            <p>We hate to break it to you but you don't really seem cut out for the end of the world. Your decision
+                making is really lacking. You might want to brush up on that and read some zombie apocalypse survival
+                guides.</p>
+            <p>Once you have brushed up on your zombie survival knowledge, why don't you have another go?</p>
+            <button class="play-again-btn">Play Again</button>
+        </div>
+        <div class="score-div" id="worst-score">
+            <h2>Braiiinnnssss</h2>
+            <p>You scored 100 points.</p>
+            <img src="#" alt="An image of " class="score-div-image">
+            <p>Let's be honest now, you might aswell just lie down and accept your fate. Based on your answers, we're
+                sure that you are as good as zombified when the time comes</p>
+            <p>Fear not, it isn't the end of the world just yet. Go an brush up on your zombie survival skills and come
+                and have another go.</p>
+            <button class="play-again-btn">Play Again</button>
+        </div>
 
-    <button id="play-music-btn">Play Music</button>
-    <button id="mute-music-btn">Mute Music</button>
-    <!-- <audio src="assets/audio/survive-web-bg-music-compressed.mp3" controls autoplay loop id="bg-music"></audio> -->
-    <div id="rules-container">
-        <p>Welcome to Survive.web, the decision making quiz where you can test your mettle during the inevitable zombie
-            apocalypse. Before you play, let's get you acquainted with the rules and game instructions:</p>
-        <br>
-        <ul class="rules-list">
-            <li>You will be presented with 10 zombie apocalypse scenarios and questions.</li>
-            <li>For each scenario and question, you will have four options to choose from.</li>
-            <li>The options have a score value ranging from 10 to 40. When you select an option, your total score will
-                increase.</li>
-            <li>Everytime you select an option, the next scenario will be displayed.</li>
-            <li>At the end of the game, your score will be assessed and depending on the score you acheive, we will
-                decide how likely you are to survive.</li>
-            <li>There is background music that will play throughout the course of the game, you can mute, pause or lower the volume of the music by using the player at the top of the page.</li>
-            <li>If you reload the page for any reason, you will be returned to this screen and you will have to begin
-                again.</li>
-        </ul>
-        <button id="start-game">Play</button>
+        <script type="module" src="assets/javascript/questions.js"></script>
+        <script type="module" src="assets/javascript/script.js"></script>
+        <footer></footer>
     </div>
-    <div id="game-container">
-        <div id="score-block">
-            <h2>Score:<span id="score-tally-container">0</span></h2>
-        </div>
-        <div>
-            <span id="number-container">This is where the number will go</span>
-            <span id="situation-container">This is where the situation will go</span>
-            <span id="question-container">This is where the question will go</span>
-        </div>
-    </div>
-    <div id="answer-btn-container">
-        <button class="answer-btn" id="answer-one"><span class="answer-container">This is where one of the options will
-                go</span></button>
-        <button class="answer-btn" id="answer-two"><span class="answer-container">This is where one of the options will
-                go</span></button>
-        <button class="answer-btn" id="answer-three"><span class="answer-container">This is where one of the options
-                will go</span></button>
-        <button class="answer-btn" id="answer-four"><span class="answer-container">This is where one of the options will
-                go</span></button>
-    </div>
-    <div class="score-div" id="best-score">
-        <h2>You're a real Rick Grimes wannabe arent you!</h2>
-        <p>You scored between 300 & 400 points!</p>
-        <img src="#" alt="An image of Rick Grimes face" class="score-div-image">
-        <p>Based on your answers, you are a survivor. You are stone cold, ruthless and cautious. We know who we are
-            tagging along with during the apocalypse.</p>
-        <p>Whilst we now know that you're a survivor, if you think you can do better, why don't you play again?</p>
-        <button class="play-again-btn">Play Again</button>
-    </div>
-    <div class="score-div" id="good-score">
-        <h2>You've got red on you.</h2>
-        <p>You scored between 200 & 300 points!</p>
-        <img src="#" alt="An image of Shaun from Shaun of the Dead" class="score-div-image">
-        <p>Based on your answers, we think that you are more than likely to survive. Your decision making could improve though.</p>
-        <p>Whilst we think you can probably survive, you might want to have another go to see if you can beat your last score.</p>
-        <button class="play-again-btn">Play Again</button>
-    </div>
-    <div class="score-div" id="bad-score">
-        <h2>Oh dear, oh dear, oh dear</h2>
-        <p>You scored between 100 & 200 points.</p>
-        <img src="#" alt="An image of " class="score-div-image">
-        <p>We hate to break it to you but you don't really seem cut out for the end of the world. Your decision making is really lacking. You might want to brush up on that and read some zombie apocalypse survival guides.</p>
-        <p>Once you have brushed up on your zombie survival knowledge, why don't you have another go?</p>
-        <button class="play-again-btn">Play Again</button>
-    </div>
-    <div class="score-div" id="worst-score">
-        <h2>Braiiinnnssss</h2>
-        <p>You scored 100 points.</p>
-        <img src="#" alt="An image of " class="score-div-image">
-        <p>Let's be honest now, you might aswell just lie down and accept your fate. Based on your answers, we're sure that you are as good as zombified when the time comes</p>
-        <p>Fear not, it isn't the end of the world just yet. Go an brush up on your zombie survival skills and come and have another go.</p>
-        <button class="play-again-btn">Play Again</button>
-    </div>
-    
-    <script type="module" src="assets/javascript/questions.js"></script>
-    <script type="module" src="assets/javascript/script.js"></script>
-    <footer></footer>
-</div>
 </body>
 
 </html>

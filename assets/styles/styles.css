@@ -18,7 +18,7 @@ Paragraph Font = font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
     background-attachment: fixed;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: center;
     background-size: cover;
 }
 
@@ -30,28 +30,40 @@ p, li {
     font-family: 'Source Sans Pro', sans-serif;
     color: #D1D1D1;
 }
+
 #main-header {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     font-family: 'Creepster', cursive;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color: #D1D1D1;
 }
-
-#bg-music {
-    width: 200px;
-    height: 40px;
-    margin-left: 25%;
+#music-btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+#play-music-btn, #mute-music-btn {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color:rgba(98, 98, 98, 0.8);
+    border: solid #D1D1D1 2px;
+    cursor: pointer;
 }
 
+#play-music-btn, #mute-music-btn i {
+    font-size: 1.5rem;
+    color:  #D1D1D1;
+}
 #rules-container {
     width: 90%;
-    height: 80%;
-    margin: 10px auto;
+    height: auto;
+    margin: 5% auto;
     padding: 5px;
     background-color: rgba(98, 98, 98, 0.8);
-    display: block;
+    display: table;
     border-radius: 8px;
 }
 

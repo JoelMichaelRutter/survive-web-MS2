@@ -33,6 +33,7 @@ function startGame() {
     let answerContainer = document.getElementById('answer-btn-container')
     answerContainer.style.display = 'flex';
     changeQuestionAndOptions();
+    audio.play();
 }
 /**
  * The function and event listeners  change the question when the user 
