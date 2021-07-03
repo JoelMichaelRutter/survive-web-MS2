@@ -195,7 +195,6 @@ body {
 }
 
 .play-again-btn {
-    /* width: 125px; */
     display: block;
     margin: 30px auto 10px auto;
     font-family: 'DotGothic16', sans-serif;
@@ -223,6 +222,7 @@ body {
     display: none;
 }
 
+/*-----------TABLET MEDIA QUERY-------------*/
 @media only screen and (min-width: 768px){
     #main-header {
         font-size: 8rem;
@@ -259,5 +259,38 @@ body {
     .score-div {
         width: 50%;
     }
-    
+}
+
+/*------SMALLER LAPTOP SCREEN MEDIA QUERY-------*/
+@media only screen and (min-width: 1024px){
+    #rules-container {
+        width: 50%;
+    }
+
+    #music-btn-container {
+        width: 40%;
+    }
+
+    #situation-container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    #game-container {
+        width: 40%;
+    }
+
+    #answer-btn-container {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .answer-btn {
+        width: 18%;
+    }
+
+    .score-div {
+        width: 30%;
+    }
+
 }
