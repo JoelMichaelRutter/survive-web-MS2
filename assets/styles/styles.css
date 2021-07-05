@@ -44,6 +44,10 @@ body {
     text-transform: uppercase;
 }
 
+#header-link{
+    text-decoration: none;
+}
+
 /*The styles below are for the music button container, the music buttons themselves and the icons contained within them*/
 #music-btn-container {
     display: flex;
