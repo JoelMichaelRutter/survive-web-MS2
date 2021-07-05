@@ -1,5 +1,5 @@
-So here's information about importing the data into another javascript file:
-https://www.tutorialrepublic.com/faq/how-to-include-a-javascript-file-in-another-javascript-file.php
-https://www.w3docs.com/learn-javascript/export-and-import.html
-changeQuestions seems to be about looping through the data in the file and if data is constructed as an object, you can use dot notation or [] notation with keys to obtain the values and use template literals to build either build the html (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-or if you have the html done, use this to place the content into existing elements (https://www.w3schools.com/js/js_htmldom_html.asp)
+# [**Survive**](https://joelmichaelrutter.github.io/survive-web-MS2/index.html)
+## Mileston Project 2
+### General Purpose & Introduction
+Survive is a fun and interactive personality quiz. The premise of the quiz enables to see how they would fair in a zombie apocalypse. Upon starting the game, the user is presented with a finite number of scenarios, questions and answers inside a robust and responsive UI which they must read and navigate through. Once they have completed the quiz, the user is presented with a score which relates them to a popular culture zombie content character.
+Based on the topical content of the quiz, I thought it was really important to generate the a creepy/post apocalyptic atmosphere. I will explain my user considerations, stories and how I met the user stories inside this document.
