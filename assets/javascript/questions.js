@@ -123,3 +123,24 @@ let questions = [
 ]
 
 export {questions};
+
+/* More questions can be added to the quiz by inserting additional objects into the array and icrementing the "numb" sequentially by one.
+It is worth noting that if further questions should be added, a blank question (excluding the number value) should always be left at the end of the array.
+The changeQuestionAndOptions function contains an if statement which checks the question number, you must change the value inside the argument of the if statement
+to the "numb" value of the blank question at the end of the array so that quiz does not cut off early and miss questions but also to prevent the system returning
+questions into the HTML that are undefined.
+
+You can find the if statement in question in the script.js file, the if statement is on the 14th line of the changeQuestionsAndOptions function. Below is a template 
+for adding new questions into the array.
+{
+    numb: ,
+    situation: "",
+    question: "",
+    options: {
+        forty: '',
+        thirty: '',
+        twenty: '',
+        ten: '',
+    }
+  },
+*/

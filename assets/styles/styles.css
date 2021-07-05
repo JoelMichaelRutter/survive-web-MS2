@@ -62,17 +62,11 @@ body {
     transition: color 0.3s;
 }
 
-/* #play-music-btn:hover, #mute-music-btn:hover{
-    background-color: #D1D1D1;
-    border: solid rgb(98, 98, 98) 2px;
-    color: rgb(98, 98, 98);
-    transition-timing-function: ease-in-out;
-} */
-
 #play-music-btn, #mute-music-btn i {
     font-size: 1rem;
 }
 
+/*The styles below are for the rules container which loads automatically when the page is loaded*/
 #rules-container {
     width: 90%;
     height: auto;
@@ -97,6 +91,7 @@ body {
     margin-bottom: 8px;
 }
 
+/*These styles are for the start game button at the bottom of the rules container*/
 #start-game {
     width: 140px;
     height: auto;
@@ -117,6 +112,7 @@ body {
     transition-timing-function: ease-in-out;
 }
 
+/*These styles are for the game container where the score, question number, situation and question are displayed*/
 #game-container {
     width: 90%;
     height: auto;
