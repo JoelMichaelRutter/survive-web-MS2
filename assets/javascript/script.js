@@ -67,7 +67,6 @@ function changeQuestionAndOptions() {
     option[2].innerText = questions[currentQuestion].options.twenty;
     option[3].innerText = questions[currentQuestion].options.ten;
     currentQuestion++;
-    console.log(currentQuestion);
     if (currentQuestion === 11){
         assessScore();
 }
@@ -79,7 +78,6 @@ function changeQuestionAndOptions() {
  * clicks one of the answer buttons.
  */
 let answerButton = Array.from(document.getElementsByClassName('answer-btn'));
-console.log(answerButton);
 answerButton.forEach(button => button.addEventListener('click', () => {
     changeQuestionAndOptions();
     tallyScore(button);
@@ -96,7 +94,6 @@ answerButton.forEach(button => button.addEventListener('click', () => {
 function tallyScore(button) {
     if (button.id === 'answer-one') {
         scoreTally = scoreTally + 40;
-        console.log(scoreTally);
     } else if (button.id === 'answer-two') {
         scoreTally = scoreTally + 30;
     } else if (button.id === 'answer-three') {
