@@ -72,7 +72,7 @@ let questions = [
     options: {
         forty: 'Get out and run',
         thirty: 'Fight back',
-        twenty: 'Call a group meeting',
+        twenty: 'Surrender',
         ten: 'Challenge them to a dance off',
     }
   },
