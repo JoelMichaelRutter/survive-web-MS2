@@ -65,6 +65,30 @@ To create my background audio, I downloaded some stock royalty free music & soun
 The sounds I downloaded are as follows:  
 * [Dark Fog – Background Music]( https://www.fesliyanstudios.com/royalty-free-music/download/dark-fog/265)
 * [Zombie & Gunfire Soundeffects]( https://www.fesliyanstudios.com/sound-effects-search.php?q=)  
-I mixed the sound effects and music together using [Spotify Sound Trap]( https://www.soundtrap.com/home).
+
+I mixed the sound effects and music together using [Spotify Sound Trap]( https://www.soundtrap.com/home).  
+## **Colour Choices**
+The colours I sourced for the project were mostly developed by extracting the HEX values from parts of the background image by using [HTML Color Codes]( https://html-color-codes.info/colors-from-image/) colour from image tool. The reason that I adopted this approach was to create a visual connection with the background depicting some zombies amongst some trees and the main content in the foreground of the page, therein adding to the atmosphere that the image generates.  
+The colour palette for the whole project and the uses of those colours is set out below:
+
+![ColourPaletteImage](assets/images/read-me-images/colour-palette.png)
+## Typography
+For the project, I used two fonts imported into my CSS file from [Google Fonts](https://fonts.google.com/). They were selected in line with the overarching themes that I wanted to achieve. The fonts I chose, examples and explanations are detailed below:  
+### **DotGothic16**
+![DotGothic16Image](assets/images/read-me-images/dot-gothic-images.PNG)  
+I chose DotGothic16 after auditioning other fonts as it adds to the atmosphere of the quiz/game. Its almost degraded and blocky nature have a post-apocalyptic yet fun/8bit feel, both of which are attributes that I strived to achieve in business and user goals.  
+### **Roboto**
+![RobotoImage](assets/images/read-me-images/roboto-font-image.PNG)  
+Roboto was one of the pairings that google fonts recommended with DotGothic16, I liked the clear cut nature of the font and decided it was the best for the purpose of development so that the user would be able to clearly read the situations and questions to play the quiz.
+## **Iconography**
+For iconography, I imported an icon library from [Font Awesome]( https://fontawesome.com/). In particular, I used the following icons:  
+* [Play Icon](https://fontawesome.com/v5.15/icons/play?style=solid) - This icon is used inside the play music button.
+* [Mute Icon](https://fontawesome.com/v5.15/icons/volume-mute?style=solid) - This icon is used inside the mute music button.
+* [Music Icon](https://fontawesome.com/v5.15/icons/music?style=solid) - This icon is used inside both play music and mute music buttons.
+* [Biohazard Icon](https://fontawesome.com/v5.15/icons/undo-alt?style=solid) - This icon is used in the play button.
+* [Back Circular Arrow](https://fontawesome.com/v5.15/icons/undo-alt?style=solid) - This icon is used in the play again buttons.
+
+
+
 
 
