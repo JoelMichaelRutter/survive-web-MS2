@@ -1,10 +1,10 @@
 # [**Survive**](https://joelmichaelrutter.github.io/survive-web-MS2/index.html)
-## Milestone Project 2
-### General Purpose & Introduction
+## **Milestone Project 2**
+### **General Purpose & Introduction**
 Survive is a fun and interactive personality quiz. The premise of the quiz enables to see how they would fair in a zombie apocalypse. Upon starting the game, the user is presented with a finite number of scenarios, questions and answers inside a robust and responsive UI which they must read and navigate through. Once they have completed the quiz, the user is presented with a score which relates them to a popular culture zombie content character.
 Based on the topical content of the quiz, I thought it was really important to generate the a creepy/post apocalyptic/uneasy atmosphere. I will explain my user considerations, stories and how I met the user stories inside this document.
 ## Table of Contents
-* ### [Deployed Site](#Deployed-Website)
+* ### [Deployed Site](#[**Deployed-Website**)
 * ### [Demo](#Site-Demonstration)
 * ### [UX](#User-Experience)
 * ### [Design](#Design-Features)
@@ -115,7 +115,45 @@ In terms of styling, I decided to colour the text with the main text colour that
   * **Bad Score** - This div’s CSS display declaration is changed in the assessScore function to block if the scoreTally value is equal to 100 (which is the lowest possible score a user could achieve). Its content informs the user that they have achieved the worst score in terms of their survival chances and relates them to you guessed it a zombie (image is also provided).
   * **Play again button** - The final piece of functionality in the site  is the play again button which is positioned in a very similar position to play button at the start of the game, the styling for the buttons are the same in terms of colour; however, I used a more appropriate undo arrow icon to suggest to the user that this was to restart the game. There same hover and active pseudo selectors are applied to the element to invert the colours of the button as the user interacts with it to provide visual feedback. The JavaScript functionality attached to this button is as follows. On click or press, the button calls the restartGame function. This function reloads the window placing the user back at the rules container to begin again. This functionality satisfies the final user story in allowing the user to play the game again.  
 
-In summary, the premise and topic of the game create satisfy creating the fun element. Its an often commonly debated topic “what would you do during the zombie apocalypse”. This element combined with the background image and music as well as the textual situations provided promotes the uneasy/creepy atmosphere to the user. The interactivity of the site comes through in the buttons different paths the user can take based on their personality which is formed with the functionality in the script.js file.
+In summary, the premise and topic of the game create the fun element. Its an often commonly debated topic “what would you do during the zombie apocalypse”. This element combined with the background image and music as well as the textual situations provided promotes the uneasy/creepy atmosphere to the user. The interactivity of the site comes through in the buttons different paths the user can take based on their personality which is formed with the functionality in the script.js file.
+# **Technologies Used**
+Below I will list the variety of technology I used during the development process:
+### **Operating Systems**
+* **[Windows 10](https://www.microsoft.com/en-gb/windows/get-windows-10)**
+### **GitPod** - was used as an Integrated Development Environment.  
+### **Languages**
+* **[HTML5](https://en.wikipedia.org/wiki/HTML5)**
+* **[CSS3](https://en.wikipedia.org/wiki/CSS)** - Flexbox
+* **[JavaScript](https://en.wikipedia.org/wiki/JavaScript)** - ES6 Syntax 
+### **Frameworks**
+* **[Google Fonts](https://fonts.google.com/)** - for typography
+* **[Font Awesome](https://fontawesome.com/)** - for iconography  
+### **Version Contol**
+* **[Git](https://en.wikipedia.org/wiki/Git)** - was used as a version control system.
+* **[GitHub](https://en.wikipedia.org/wiki/GitHub)** - was used as a code repository and deployment platform.  
+### **Wireframes**
+* **[Microsoft Visio](https://en.wikipedia.org/wiki/Microsoft_Visio)** - Was used to plan the content, functionality of the site and to create the front end wireframes.  
+### **Other**
+* **[Can I Use?](https://caniuse.com/)** - To understand browser compatibility and help with testing.
+* **[Online Image Resizer](https://resizeimage.net/)** - For reducing image size in terms of resolution and compression.
+* **[Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)** - Used to write the initial README and TESTING documents. 
+* **[Microsoft Powerpoint]( https://en.wikipedia.org/wiki/Microsoft_PowerPoint)** - To crop and resize my images for the score containers, and create images for this README.md file.
+* **[Microsoft Forms](https://forms.microsoft.com/)** - To create my user testing feedback form.
+* **[Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel)** - To create my manual testing spreadsheet checklist.
+# **Application Testing**  
+Please click [here](testing.md) to see a full breakdown of all testing completed on the application.
+# **Deploying the site**
+The finalised version of the site is deployed on GitHub Pages. Here are the steps I followed to deploy the site:
+1.	Login to [GitHub](https://github.com/) and locate the [survive-web-MS2](https://github.com/JoelMichaelRutter/survive-web-MS2) repository.
+2.	In the top menu of the repository, select the settings option.  
+![Git Hub Settings Option Screenshot](assets/images/read-me-images/survive-deploy-img-one.PNG)
+3.	Scroll down the settings page until you find the GitHub Pages option and click it.  
+![Git Hub Pages Option Inside Settings](assets/images/read-me-images/survive-deploy-image-two.png)
+4.	On the GitHub pages section, locate the dropdown that displays the word “None”. Click the dropdown and select the “Master” or “Main” branch.  
+![Git Hub Pages Branch Selector Screenshot](assets/images/read-me-images/survive-deploy-image-three.png)
+5.	The page will refresh automatically and provide a link to the deployed site in the uppermost section. Click this link to load the deployed site.  
+![Git Hub Pages Deployed Site Link Screenshot](assets/images/read-me-images/survive-deploy-image-four.png)
+6.	If the site does not display straight away, it may be because GitHub pages is preparing the site, wait for a few minutes and follow the previous step again.
 
 
 
