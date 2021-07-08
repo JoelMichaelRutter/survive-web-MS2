@@ -153,8 +153,43 @@ The finalised version of the site is deployed on GitHub Pages. Here are the step
 ![Git Hub Pages Branch Selector Screenshot](assets/images/read-me-images/survive-deploy-image-three.png)
 5.	The page will refresh automatically and provide a link to the deployed site in the uppermost section. Click this link to load the deployed site.  
 ![Git Hub Pages Deployed Site Link Screenshot](assets/images/read-me-images/survive-deploy-image-four.png)
-6.	If the site does not display straight away, it may be because GitHub pages is preparing the site, wait for a few minutes and follow the previous step again.
+6.	If the site does not display straight away, it may be because GitHub pages is preparing the site, wait for a few minutes and follow the previous step again.  
+## **Forking the repository**
+Should you wish to use the site code inside the repository without affecting the original repository, you can make a fork and create a copy of the repository which you can view and amend the code within. To create a fork, follow these steps:
+1. Login to [GitHub](https://github.com/) and locate the [survive-web-MS2](https://github.com/JoelMichaelRutter/survive-web-MS2) repository.
+2. In the top right-hand corner of the repository, you will see three buttons just below your profile icon. The rightmost button is called “fork”. Click this button.  
+![Fork Button Screenshot](assets/images/read-me-images/survive-fork-image.png)
+3. The repository will now be copied to your own GitHub account.  
+## **Cloning the repository**
+You can create a clone of the repository inside your development environment. To do this, follow these steps:
+1. Login to [GitHub](https://github.com/) and locate the [survive-web-MS2](https://github.com/JoelMichaelRutter/survive-web-MS2) repository.
+2. Whilst in the repository, you will see the various files contained within. Above this list, you will see a button labelled “code”. The button will have a small download icon beside it.  
+![Cloning Button Screenshot](assets/images/read-me-images/survive-clone-image-one.png)
+3.	When you click this icon, a small dropdown will open. Inside the dropdown will be the URL for the deployed site. Copy this URL by clicking the clipboard icon.  
+![Cloning Dropdown Screenshot](assets/images/read-me-images/survive-clone-image-two.png)
+4.	Open the Git Pod integrated development environment. 
+5.	Whilst in the development environment, navigate to the bash terminal.
+6.	In the bash terminal, enter “git clone”, then paste in the URL copied from the GitHub repository and hit enter.
+![Cloning Terminal Screenshot](assets/images/read-me-images/survive-clone-image-three.png)
+7.	A clone of all files will now be pulled into the workspace.  
+# **Project Reflection**
 
+Wow. What a learning curve.  At times, this project nearly broke me. But after persevering and with the excellent support of code institute, I am really proud of what I have built. I set out not to create the flashiest application but something that was robust and worked whilst championing the adage of clean code. I’ve enjoyed watching my idea materialise into something tangible, from the blocky basic styles and functionality into a well styled and functionality zombie themed personality quiz. Whilst adjusting to my first real programming language has been tough, I think over the course of the project, the concepts that have been taught have really sunk in. There is a lot more to learn in terms of JavaScript, and I can’t wait for the day that I am truly fluent in the language. I know that there is lots more to come, bring it on.
+
+# **Further Development Scope**
+
+In my own humble opinion, I have left this application with lots of future scope for development. I have commented all of my code heavily with detailed explanations in each of my code files as to exactly how the code blocks work and the considerations that future developers would need to make if adding to the application. This doesn’t just apply for the script.js or questions.js file, it is project wide. In terms of my own ideas as to how this application could be developed further:  
+* **Additional Questions** – Adding additional questions to create a longer experience would be easy to do considering I have left a template and an explanatory comment to developers as to how to add elements into the questions array.
+* **Randomisation** – Whilst the randomisation of the questions and the order that they appear in the answer buttons was of no consequence as the quiz is a personality quiz and designed to go in order as the user progresses through the fictional zombie apocalypse, some layout randomisation would be great in future so that the order in which the buttons appear could add to the playability. 
+* **Branching** – It would be excellent if the quiz could evolve more dynamically to the users answers where if the user selects a bad answer, the next situation leaves them in a more difficult situation where they have to pick a better answer otherwise the game could end. With that kind of functionality, you could almost turn the game into a fully blown text based role playing game which could update with new scenarios as development continued.
+## **Code**
+* **[Code Institute’s Full Stack Software Development Course](https://codeinstitute.net/)** - For their course modules so that I could skip back and review course content to help me.
+* **[Stack Overflow Community](https://stackoverflow.com/)** - For helping me find my way around problems and suggesting fixes.
+* **[W3 Schools](https://www.w3schools.com/)** - For serving as a quick dictionary of declarations and values.
+# **Project Acknowledgements**
+* **Code Institute Tutor Support** - For pushing me in the right direction with tricky bugs, I would specifically like to mention Sean and Scott who were sensational.
+* **My Partner** - Charlotte Howard for beleiving in me and helping me write content that wasn’t absolutely rubbish.
+* **My Mentor** - Chris Quinn for believing in me, generally being a coding god and helping me keep the demons at bay.
 
 
 
