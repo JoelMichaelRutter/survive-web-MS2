@@ -159,6 +159,7 @@ body {
     padding-bottom: 20px;
 }
 
+/*The below styles are for the answer button container and the answer buttons themselves*/
 #answer-btn-container{
     display: none;
     justify-content: space-around;
@@ -188,6 +189,7 @@ body {
     transition-timing-function: ease-in-out;
 }
 
+/*The below styles are for the score div containers which appear at the end of the game and the content that sits within them*/
 .score-div {
     background: rgba(98, 98, 98, 0.9);
     width: 90%;
@@ -239,7 +241,7 @@ body {
     background-color: black;
     transition-timing-function: ease-in-out;
 }
-
+/*These style rules hide the score containers until the assessScore function in script.js overrides them depending on the value of scoreTally*/
 #best-score {
     display: none;
 }
