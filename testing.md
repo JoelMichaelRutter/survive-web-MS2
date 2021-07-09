@@ -27,3 +27,5 @@ To test the performance of the website, I used Google Lighthouse inside Chrome D
 
 * **Index.html**  
 ![survive-google-lighthouse-image](assets/images/read-me-images/survive-google-lighthouse.PNG)
+
+# **Code Validation**

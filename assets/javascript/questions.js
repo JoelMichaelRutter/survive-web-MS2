@@ -120,7 +120,7 @@ let questions = [
         ten: '',
     }
   },
-]
+];
 
 export {questions};
 
