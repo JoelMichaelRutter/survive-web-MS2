@@ -8,6 +8,8 @@ In developing in this approach, I overlooked one thing. I planned to have some p
   1.	I firstly envisaged using ontouchstart and ontouchend to run some functions to change the CSS applied to the element and revert when the touch ended to provide the visual feedback entitled to mouse users. After weighing this up and researching the method, I determined that because of touch events patchy support on Safari and its taxing load on performance, the best and most time effective option in terms of development would be what follows.
   2.	I added an additional media query to service the norm of laptop sizes (from 1280px and above). I added the hover pseudo selector into this media query so that laptops and desktop user can still have the benefit of their visual feedback. Inside the tablet and mobile media queries, I added the same class but replaced the pseudo selector with :active. This way whilst the effect is diminished somewhat by its own nature, the user still has some colour inversion above the usual browser built in blue flash. 
 
+# **Known Issues**
+The only issue with the site persists from the problem I menitoned above. On professional tablets such as the iPad pro, the screen resolution will trigger the laptop media query and the hover ppseudo selector will stay active. This could be solved using on start and touch end, but it is quite taxing to performance.
 # **Functionality and Compatibility Testing**
 To test the site, I employed a manual testing checklist in excel where I tested the site display and functionality element by element. Please click [here](assets/testing-files/survive-manual-testing-checklist.xlsx) to access the spreadsheet checklists for full details of all manual functionality and compatibility testing completed across a range of devices (Please note, you will need to download the excel file to access it). To summarise the manual testing, the website has been tested by myself in both portrait and landscape mode (where appliable) on the following devices, browsers & operating systems:
    * Google Pixel 3 – Google Chrome, MS Edge, Firefox – Android 11
@@ -29,3 +31,8 @@ To test the performance of the website, I used Google Lighthouse inside Chrome D
 ![survive-google-lighthouse-image](assets/images/read-me-images/survive-google-lighthouse.PNG)
 
 # **Code Validation**
+I have validated all code files through the following means:
+* **index.html** - Validated through the [w3schools HTML validator](https://validator.w3.org/#validate_by_input) via direct input. No errors or warnings present.
+* **styles.css** - Validated through the [w3schools Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator) via direct input. No errors or warning present.
+* **script.js** - Validated through [JShint](https://jshint.com/). No errors present, however there are insignificant warnings due to my use of ES6 syntax.
+* **questions.js** - Validated through [JShint](https://jshint.com/). No errors present, hoever there are warnings due to my use of ES6 syntax and due to an unread variable (this warning is being thrown as the variable is not read in the same file but exported to the script.js file).
